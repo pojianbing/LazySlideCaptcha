@@ -2,7 +2,7 @@
 
 #### 介绍
 LazySlideCaptcha是基于.Net Standard 2.1的滑动验证码模块。   
-项目同时提供一个基于vue2的演示[前端组件](https://gitee.com/pojianbing/lazy-slide-captcha-dev/tree/master/Components/vue2)和[背景图裁剪工具](http://www.sunseeyou.com/cropper/index.html)。       
+项目同时提供一个基于vue2的演示[前端组件](https://gitee.com/pojianbing/lazy-slide-captcha/tree/master/Components/vue2)和[背景图裁剪工具](http://www.sunseeyou.com/cropper/index.html)。       
  **图形验证码请移步[lazy-captcha](https://gitee.com/pojianbing/lazy-captcha)。** 
 
 [ **在线体验** ](http://www.sunseeyou.com/)
@@ -94,7 +94,7 @@ public class CaptchaController : ControllerBase
 至此后端Api服务已搭建完成。
 
 4. 前端  
-前端提供演示组件[lazy-slide-captcha](https://gitee.com/pojianbing/lazy-slide-captcha-dev/tree/master/Components/vue2)，可通过npm安装。Demo项目为了演示方便直接采用script直接引入方式。
+前端提供演示组件[lazy-slide-captcha](https://gitee.com/pojianbing/lazy-slide-captcha/tree/master/Components/vue2)，可通过npm安装。Demo项目为了演示方便直接采用script直接引入方式。
 
 
 ``` html
