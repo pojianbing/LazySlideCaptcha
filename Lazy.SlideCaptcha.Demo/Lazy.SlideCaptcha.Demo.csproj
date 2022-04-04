@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>86b8db7a-6bea-402b-945f-5aef359e8f95</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\background\1.jpg" />
+    <None Include="wwwroot\images\background\10.jpg" />
+    <None Include="wwwroot\images\background\2.jpg" />
+    <None Include="wwwroot\images\background\3.jpg" />
+    <None Include="wwwroot\images\background\4.jpg" />
+    <None Include="wwwroot\images\background\5.jpg" />
+    <None Include="wwwroot\images\background\6.jpg" />
+    <None Include="wwwroot\images\background\7.jpg" />
+    <None Include="wwwroot\images\background\8.jpg" />
+    <None Include="wwwroot\images\background\9.jpg" />
+    <None Include="wwwroot\images\template\1\hole.png" />
+    <None Include="wwwroot\images\template\1\slider.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.15.0" />
+    <PackageReference Include="vue" Version="2.6.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lazy.SlideCaptcha.Core\Lazy.SlideCaptcha.Core.csproj" />
+  </ItemGroup>
+
+</Project>

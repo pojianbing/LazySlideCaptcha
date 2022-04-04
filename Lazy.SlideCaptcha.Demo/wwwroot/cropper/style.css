@@ -1,0 +1,80 @@
+html {
+  background-image: linear-gradient(-170deg,#c1daf7 20%,#99c5f3);
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: linear-gradient(270deg,#b2ccea 3px,transparent 0),linear-gradient(#b8d7fb 3px,transparent 0),linear-gradient(270deg,rgba(148,189,236,.4) 1px,transparent 0),linear-gradient(#95c0f3 1px,transparent 0),linear-gradient(270deg,rgba(43,103,172,.4) 1px,transparent 0),linear-gradient(#a7cbf5 1px,transparent 0);
+  background-size: 112px 112px,112px 112px,56px 56px,56px 56px,28px 28px,28px 28px;
+  height: 100%;
+  margin: 0;
+}
+
+img {
+  display: block;
+
+  /* This rule is very important, please don't ignore this */
+  max-width: 100%;
+}
+
+
+.container {
+    margin: 0px auto;
+    max-width: 960px;
+}
+
+#actionBar{
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#importButton{
+  height: 40px;
+  width: 70px;
+}
+
+#saveButton{
+  margin-left: 50px;
+}
+
+#output{
+  margin-top: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+#tip{
+  margin-top: 20px;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  display: none;
+}
+
+input[type='button']{
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #dcdfe6;
+  color: #606266;
+  -webkit-appearance: none;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  transition: .1s;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #409eff;
+  border-color: #409eff;
+  padding: 12px 23px;
+}

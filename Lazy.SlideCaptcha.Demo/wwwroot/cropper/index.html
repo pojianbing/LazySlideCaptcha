@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>裁剪小助手</title>
+  <link  href="cropper.min.css" rel="stylesheet">
+  <link  href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <img id="image">
+    <div id="actionBar">
+      <div style="position: relative;">
+        <input type="button" value="导入图片" style="position: absolute;"></input>
+        <input type="file" id="importButton" value="导入" accept="image/*" style="opacity:0;" style="position: absolute;"></input>
+      </div>
+      <input type="button" id="saveButton" value="保存图片"></input>
+    </div>
+
+    <div id="output"></div>
+    <div id="tip">上述宽高仅做参考，剪切后统一缩放到590X360（标准尺寸）。如果上述尺寸过小，最终生成的图片会模糊。反之，则图像会同比缩小。</div>
+  </div>
+
+  <script src="cropper.min.js"></script>
+  <script src="FileSaver.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    var URL = window.URL || window.webkitURL;
+    var originalImageURL = image.src;
+    var uploadedImageType = 'image/jpeg';
+    var uploadedImageName = 'cropped.jpg';
+    var uploadedImageURL;
+
+    $(function(){
+      var options =  {
+        aspectRatio: 552 / 344,
+        crop(event) {
+          $('#output').html('width:' + Math.round(event.detail.width) + ', height:' + Math.round(event.detail.height))
+        }
+      }
+      const image = document.getElementById('image');
+      var cropper = new Cropper(image, options);
+
+      $('#saveButton').click(function(){
+        cropper.getCroppedCanvas({
+          width: 552,
+          height: 344,
+        }).toBlob((blob) => {
+          saveAs(blob, uploadedImageName);
+        }, 'image/jpeg');        
+      })
+      
+      $('#importButton').change(function(){
+        if (this.files && this.files.length) {
+          var file = this.files[0];
+
+          if (/^image\/\w+/.test(file.type)) {
+            uploadedImageType = file.type;
+            uploadedImageName = file.name;
+
+            if (uploadedImageURL) {
+              URL.revokeObjectURL(uploadedImageURL);
+            }
+
+            image.src = uploadedImageURL = URL.createObjectURL(file);
+            $('#tip').show()
+
+            if (cropper) {
+              cropper.destroy();
+            }
+
+            cropper = new Cropper(image, options);
+          } else {
+            window.alert('Please choose an image file.');
+          }
+        }
+      })
+
+    })
+  </script>
+</body>
+</html>
