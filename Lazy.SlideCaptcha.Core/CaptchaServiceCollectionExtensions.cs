@@ -16,7 +16,7 @@ namespace Microsoft.Extensions.DependencyInjection
     {
         public static CaptchaBuilder AddSlideCaptcha(this IServiceCollection services, IConfiguration configuration, Action<CaptchaOptions> optionsAction = default)
         {
-            services.Configure<CaptchaOptions>(configuration?.GetSection("CaptchaSlideOptions"));
+            services.Configure<CaptchaOptions>(configuration?.GetSection("SlideCaptcha"));
             if (optionsAction != null) services.PostConfigure(optionsAction);
 
             var builder = new CaptchaBuilder(services);

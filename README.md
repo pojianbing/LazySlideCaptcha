@@ -37,7 +37,7 @@ builder.Services.AddSlideCaptcha(builder.Configuration);
 //});
 ```
 ``` json
-"CaptchaSlideOptions": {
+"SlideCaptcha": {
     "Backgrounds": [
       {
         "Type": "file",
@@ -202,7 +202,7 @@ public class CaptchaController : ControllerBase
 支持配置文件和代码配置，同时配置则代码配置覆盖配置文件。
 - 配置文件
 ``` c#
-"CaptchaSlideOptions": {
+"SlideCaptcha": {
     "ExpirySeconds": 60, // 缓存过期时长
     "StoreageKeyPrefix": "", // 缓存前缀
     "Tolerant": 0.02, // 容错值(校验时用，缺口位置与实际滑动位置匹配容错范围)
