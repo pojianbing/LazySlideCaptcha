@@ -264,8 +264,8 @@ export default {
         this.$refs.slider.style.left = _x + "px";
 
         this.tracks.push({
-          x: _x,
-          y: _y,
+          x: Math.round(_x),
+          y: Math.round(_y),
           t: new Date().getTime() - this.startSlidingTime.getTime(),
         });
       }

@@ -4607,14 +4607,14 @@ var es_object_to_string = __webpack_require__(1539);
 var web_dom_collections_for_each = __webpack_require__(4747);
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.function.name.js
 var es_function_name = __webpack_require__(8309);
-;// CONCATENATED MODULE: ./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/package/lazy-slide-captcha/index.vue?vue&type=template&id=5d722f82&scoped=true&
+;// CONCATENATED MODULE: ./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/package/lazy-slide-captcha/index.vue?vue&type=template&id=273e6401&scoped=true&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"captcha"},[_c('div',{staticClass:"captcha__main",style:(_vm.imgWrapperStyle)},[(_vm.src)?_c('img',{ref:"background",staticClass:"captcha_background",attrs:{"src":_vm.src,"alt":"background"}}):_vm._e(),(_vm.sliderSrc)?_c('img',{ref:"slider",staticClass:"captcha_slider",class:{ goFirst: _vm.isOk, goKeep: _vm.isKeep },attrs:{"src":_vm.sliderSrc,"alt":"slider"}}):_vm._e(),(_vm.showVerifyTip)?_c('div',{staticClass:"captcha_message"},[_c('div',{staticClass:"captcha_message__icon"},[(_vm.isPassing)?_c('svg',{attrs:{"width":"28","height":"28","viewBox":"0 0 28 28","xmlns":"http://www.w3.org/2000/svg"}},[_c('g',{attrs:{"stroke":"#fff","stroke-width":"1.5","fill":"none","fill-rule":"evenodd","stroke-linecap":"round","stroke-linejoin":"round"}},[_c('path',{attrs:{"d":"M22.776 4.073A13.2 13.2 0 0 0 14 .75C6.682.75.75 6.682.75 14S6.682 27.25 14 27.25 27.25 21.318 27.25 14c0-.284-.009-.566-.027-.845"}}),_c('path',{attrs:{"d":"M7 12.5l7 7 13-13"}})])]):_c('svg',{attrs:{"width":"28","height":"28","viewBox":"0 0 28 28","xmlns":"http://www.w3.org/2000/svg"}},[_c('g',{attrs:{"stroke":"#fff","stroke-width":"1.5","fill":"none","fill-rule":"evenodd"}},[_c('circle',{attrs:{"cx":"14","cy":"14","r":"13.25"}}),_c('path',{attrs:{"stroke-linecap":"round","stroke-linejoin":"round","d":"M8.75 8.75l10.5 10.5M19.25 8.75l-10.5 10.5"}})])])]),_c('div',{staticClass:"captcha_message__text"},[_vm._v(_vm._s(_vm.isPassing ? _vm.successTip : _vm.failTip))])]):_vm._e(),(_vm.showGenerateLoadding)?_c('div',{staticClass:"captcha_message loadding"},[_c('div',{staticClass:"captcha_message__icon captcha_message__icon--loadding"}),_c('div',{staticClass:"captcha_message__text"},[_vm._v("加载中...")])]):_vm._e(),(_vm.showVerifyLoadding)?_c('div',{staticClass:"captcha_message"},[_c('div',{staticClass:"captcha_message__icon captcha_message__icon--loadding"}),_c('div',{staticClass:"captcha_message__text"})]):_vm._e()]),_c('div',{ref:"dragVerify",staticClass:"captcha__bar",style:(_vm.dragVerifyStyle)},[_c('div',{ref:"progressBar",staticClass:"captcha_progress_bar",class:{ goFirst2: _vm.isOk },style:(_vm.progressBarStyle)}),_c('div',{staticClass:"captcha_progress_bar__text",style:(_vm.textStyle)},[_vm._v(_vm._s(_vm.text))]),_c('div',{ref:"handler",staticClass:"captcha_handler",class:{ goFirst: _vm.isOk },style:(_vm.handlerStyle),on:{"mousedown":_vm.handleDragStart,"touchstart":_vm.handleDragStart}},[_c('svg',{style:(_vm.handlerSvgStyle),attrs:{"viewBox":"0 0 1024 1024","version":"1.1","xmlns":"http://www.w3.org/2000/svg","p-id":"819"}},[_c('path',{attrs:{"d":"M500.864 545.728a47.744 47.744 0 0 0 6.72-48.896 24.704 24.704 0 0 0-4.48-8.384L240.256 193.088a34.24 34.24 0 0 0-28.608-17.408 34.24 34.24 0 0 0-25.856 12.864 46.592 46.592 0 0 0 0 59.52l238.08 264.512-238.08 264.512a46.592 46.592 0 0 0-1.088 59.52 32 32 0 0 0 50.56 0l265.6-290.88z","p-id":"820"}}),_c('path',{attrs:{"d":"M523.84 248.064l236.992 264.512-238.08 264.512a46.592 46.592 0 0 0 0 59.52 32 32 0 0 0 50.56 0l265.6-292.608a47.744 47.744 0 0 0 6.72-48.832 24.704 24.704 0 0 0-4.48-8.448L578.304 191.36a34.24 34.24 0 0 0-55.552-2.816 46.592 46.592 0 0 0 1.088 59.52z","p-id":"821"}})])])]),(_vm.showRefresh)?_c('div',{staticClass:"captcha__actions"},[_c('a',{staticClass:"captcha__action",on:{"click":_vm.handleRefresh}},[_c('svg',{attrs:{"fill":"#505050","width":"20px","height":"20px","viewBox":"0 0 20 20","version":"1.1","xmlns":"http://www.w3.org/2000/svg"}},[_c('path',{attrs:{"d":"M10,4 C12.0559549,4 13.9131832,5.04358655 15.0015086,6.68322231 L15,5.5 C15,5.22385763 15.2238576,5 15.5,5 C15.7761424,5 16,5.22385763 16,5.5 L16,8.5 C16,8.77614237 15.7761424,9 15.5,9 L12.5,9 C12.2238576,9 12,8.77614237 12,8.5 C12,8.22385763 12.2238576,8 12.5,8 L14.5842317,8.00000341 C13.7999308,6.20218044 12.0143541,5 10,5 C7.23857625,5 5,7.23857625 5,10 C5,12.7614237 7.23857625,15 10,15 C11.749756,15 13.3431487,14.0944653 14.2500463,12.6352662 C14.3958113,12.4007302 14.7041063,12.328767 14.9386423,12.4745321 C15.1731784,12.6202971 15.2451415,12.9285921 15.0993765,13.1631281 C14.0118542,14.9129524 12.0990688,16 10,16 C6.6862915,16 4,13.3137085 4,10 C4,6.6862915 6.6862915,4 10,4 Z","fill-rule":"nonzero"}})]),_c('span',{staticClass:"captcha__action__text"},[_vm._v("刷新")])])]):_vm._e()])}
 var staticRenderFns = []
 
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.number.constructor.js
 var es_number_constructor = __webpack_require__(9653);
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40[0].rules[0].use[1]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/package/lazy-slide-captcha/index.vue?vue&type=script&lang=js&
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40[0].rules[0].use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/package/lazy-slide-captcha/index.vue?vue&type=script&lang=js&
 
 //
 //
@@ -4877,8 +4877,8 @@ var es_number_constructor = __webpack_require__(9653);
         this.$refs.progressBar.style.width = _x + this.barHeight / 2 + "px";
         this.$refs.slider.style.left = _x + "px";
         this.tracks.push({
-          x: _x,
-          y: _y,
+          x: Math.round(_x),
+          y: Math.round(_y),
           t: new Date().getTime() - this.startSlidingTime.getTime()
         });
       }
@@ -4907,12 +4907,12 @@ var es_number_constructor = __webpack_require__(9653);
 });
 ;// CONCATENATED MODULE: ./src/package/lazy-slide-captcha/index.vue?vue&type=script&lang=js&
  /* harmony default export */ var package_lazy_slide_captchavue_type_script_lang_js_ = (lazy_slide_captchavue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12[0].rules[0].use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/package/lazy-slide-captcha/index.vue?vue&type=style&index=0&id=5d722f82&scoped=true&lang=css&
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12[0].rules[0].use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/package/lazy-slide-captcha/index.vue?vue&type=style&index=0&id=273e6401&scoped=true&lang=css&
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./src/package/lazy-slide-captcha/index.vue?vue&type=style&index=0&id=5d722f82&scoped=true&lang=css&
+;// CONCATENATED MODULE: ./src/package/lazy-slide-captcha/index.vue?vue&type=style&index=0&id=273e6401&scoped=true&lang=css&
 
-;// CONCATENATED MODULE: ./node_modules/@vue/vue-loader-v15/lib/runtime/componentNormalizer.js
+;// CONCATENATED MODULE: ./node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/runtime/componentNormalizer.js
 /* globals __VUE_SSR_CONTEXT__ */
 
 // IMPORTANT: Do NOT use ES2015 features in this file (except for modules).
@@ -5027,7 +5027,7 @@ var component = normalizeComponent(
   staticRenderFns,
   false,
   null,
-  "5d722f82",
+  "273e6401",
   null
   
 )
