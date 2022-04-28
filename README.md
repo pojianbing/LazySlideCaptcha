@@ -85,7 +85,7 @@ public class CaptchaController : ControllerBase
     /// <returns></returns>
     [Route("check")]
     [HttpPost]
-    public bool Validate([FromQuery]string id, SlideTrack track)
+    public ValidateResult Validate([FromQuery]string id, SlideTrack track)
     {
         return _captcha.Validate(id, track);
     }
