@@ -1,24 +1,15 @@
-# vue2
+# LazySlideCaptcha前端组件使用
 
-## Project setup
+### 安装
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+npm install lazy-slide-captcha
 ```
 
-### Compiles and minifies for production
+### 项目引入
 ```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
+import LazySlideCaptcha from 'lazy-slide-captcha'
+import 'lazy-slide-captcha/dist/lazy-slide-captcha.css';
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 
+
