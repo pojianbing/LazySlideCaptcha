@@ -28,6 +28,7 @@ dotnet add package Lazy.SlideCaptcha.Core
 
 2. 注册并配置服务
 ``` c#
+builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSlideCaptcha(builder.Configuration);
 
 // 如果使用redis分布式缓存
