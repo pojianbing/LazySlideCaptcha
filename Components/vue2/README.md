@@ -11,6 +11,8 @@ npm install lazy-slide-captcha
 ```
 import LazySlideCaptcha from 'lazy-slide-captcha'
 import 'lazy-slide-captcha/dist/lazy-slide-captcha.css';
+
+Vue.use(LazySlideCaptcha);
 ```
 
 ### 页面使用
