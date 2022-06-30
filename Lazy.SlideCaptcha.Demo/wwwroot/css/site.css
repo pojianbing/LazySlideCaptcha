@@ -16,3 +16,23 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+footer.footer {
+/*    padding-top: 10px;
+    padding-bottom: 10px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #888;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    background: #222;
+    line-height: 40px !important;
+}
+
+    footer.footer a {
+        text-decoration: none;
+        color: #9d9d9d !important;
+    }
+    
