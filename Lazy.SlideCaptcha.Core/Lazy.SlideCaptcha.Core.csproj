@@ -2,12 +2,12 @@
 
 	<PropertyGroup>
 		<TargetFramework>netstandard2.1</TargetFramework>
-		<Description>基于.Net Standard 2.1的滑动验证码模块。</Description>
+		<Description>基于.Net Standard 2.1的滑动验证码模块。从2.0.0起绘图由ImageSharp调整为SkiaSharp。</Description>
 		<PackageProjectUrl>https://gitee.com/pojianbing/lazy-slide-captcha</PackageProjectUrl>
 		<RepositoryUrl>https://gitee.com/pojianbing/lazy-slide-captcha</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
-		<AssemblyVersion>1.0.2</AssemblyVersion>
-		<Version>1.0.2</Version>
+		<AssemblyVersion>2.0.0</AssemblyVersion>
+		<Version>2.0.0</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -44,8 +44,7 @@
 	  <PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
 	  <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="6.0.0" />
 	  <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-	  <PackageReference Include="SixLabors.ImageSharp" Version="2.1.0" />
-	  <PackageReference Include="SixLabors.ImageSharp.Drawing" Version="1.0.0-beta14" />
+	  <PackageReference Include="SkiaSharp" Version="2.88.3" />
 	</ItemGroup>
 
 </Project>

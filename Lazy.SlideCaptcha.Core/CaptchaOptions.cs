@@ -23,6 +23,11 @@ namespace Lazy.SlideCaptcha.Core
         public float Tolerant { get; set; } = 0.02f;
 
         /// <summary>
+        /// 干扰块数量
+        /// </summary>
+        public int InterferenceCount { get; set; } = 0;
+
+        /// <summary>
         /// 背景图
         /// </summary>
         public List<Resource> Backgrounds { get; set; } = new List<Resource>();

@@ -24,9 +24,9 @@ namespace Microsoft.Extensions.DependencyInjection
             services.AddSingleton<IResourceProvider, EmbeddedResourceProvider>();
             services.AddSingleton<IResourceHandlerManager, CachedResourceHandlerManager>();
             services.AddSingleton<IResourceManager, DefaultResourceManager>();
-            services.AddSingleton<ICaptchaImageGenerator, DefaultCaptchaImageGenerator>();
             services.AddSingleton<IResourceHandler, FileResourceHandler>();
             services.AddSingleton<IResourceHandler, EmbeddedResourceHandler>();
+            services.AddScoped<ICaptchaImageGenerator, DefaultCaptchaImageGenerator>();
             services.AddScoped<ICaptcha, DefaultCaptcha>();
             services.AddScoped<IStorage, DefaultStorage>();
             services.AddScoped<IValidator, SimpleValidator>();

@@ -1,5 +1,4 @@
 ﻿using Lazy.SlideCaptcha.Core.Exceptions;
-using SixLabors.ImageSharp;
 using System;
 using System.Collections.Generic;
 using System.Text;

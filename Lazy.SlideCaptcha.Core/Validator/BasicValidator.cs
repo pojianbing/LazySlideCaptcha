@@ -60,16 +60,16 @@ namespace Lazy.SlideCaptcha.Core.Validator
 
             return true;
 
-            // check7: x轴应该是由快到慢的， 要是速率一致，返回false
-            int splitPos = (int)(trackList.Count * 0.7);
-            var splitPostTrack = trackList[splitPos - 1];
-            int posTime = splitPostTrack.T;
-            float startAvgPosTime = posTime / (float)splitPos;
+            //// check7: x轴应该是由快到慢的， 要是速率一致，返回false
+            //int splitPos = (int)(trackList.Count * 0.7);
+            //var splitPostTrack = trackList[splitPos - 1];
+            //int posTime = splitPostTrack.T;
+            //float startAvgPosTime = posTime / (float)splitPos;
 
-            var lastTrack = trackList[trackList.Count - 1];
-            float endAvgPosTime = (lastTrack.T - posTime) / (float)(trackList.Count - splitPos);
+            //var lastTrack = trackList[trackList.Count - 1];
+            //float endAvgPosTime = (lastTrack.T - posTime) / (float)(trackList.Count - splitPos);
 
-            return endAvgPosTime > startAvgPosTime;
+            //return endAvgPosTime > startAvgPosTime;
         }
     }
 }
