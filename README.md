@@ -1,7 +1,7 @@
 # LazySlideCaptcha （基于SkiaSharp）
 
 #### 介绍
-LazySlideCaptcha是基于.Net Standard 2.1的滑动验证码模块。项目同时提供一个基于vue2的演示[前端组件](https://gitee.com/pojianbing/lazy-slide-captcha/tree/master/Components/vue2)和[背景图裁剪工具](http://www.sunseeyou.com/cropper/index.html)。从2.0.0起绘图模块由ImageSharp调整为SkiaSharp.   
+LazySlideCaptcha是基于.Net Standard 2.1的滑动验证码模块。项目同时提供一个基于vue2的演示[前端组件](https://gitee.com/pojianbing/lazy-slide-captcha/tree/master/Components/vue2)和[背景图裁剪工具](http://www.sunseeyou.com/cropper/index.html)。从2.0.0起绘图模块由ImageSharp调整为SkiaSharp。
 **[【码云地址】](https://gitee.com/pojianbing/lazy-slide-captcha)|[【Github地址】](https://github.com/pojianbing/LazySlideCaptcha)**
 
  **图形验证码请移步[lazy-captcha](https://gitee.com/pojianbing/lazy-captcha)。** 
